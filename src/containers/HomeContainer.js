@@ -1,16 +1,12 @@
-import React, { Component } from "react";
-import "./styles/HomeContainer.css";
-import bg from "../images/house-web.jpg";
-import { pathToName } from "../utilities";
+import React from 'react'
+import IntroComponent from '../components/IntroComponent'
 
-export default class HomeContainer extends Component {
-	render() {
-		return (
+export default function HomeContainer() {
+	return (
+			
 			<>
-				<img src={bg} alt={pathToName(bg)} className="bg" />
-				<div id="overlay" />
-				<div>Hello</div>
+				<IntroComponent />
 			</>
-		);
-	}
+		
+	)
 }

@@ -1,0 +1,13 @@
+h1 {
+	color: white;
+	display: inline-block;
+	/*
+	width: 100%;
+	text-align: center; */
+	border-style: solid;
+	border-color: white;
+}
+
+.wrapper {
+	text-align: center;
+}

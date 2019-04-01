@@ -5,6 +5,9 @@ import PortfolioContainer from "./PortfolioContainer";
 import ResumeContainer from "./ResumeContainer";
 import styled from "styled-components";
 import MenuComponent from "../components/MenuComponent";
+import { pathToName } from "../utilities";
+import bg from "../images/house-web.jpg";
+import './styles/RootContainer.css'
 
 const StyledRoot = styled.div`
 	position: relative;
@@ -15,11 +18,24 @@ const StyledRoot = styled.div`
 
 class RootContainer extends Component {
 	state = {
-		expanded: false
+		expanded: false,
+		photoHover: false
 	};
 
 	onToggle = expanded => {
 		this.setState({ expanded });
+	};
+
+	onMouseEnter = () => {
+		this.setState({ photoHover: true });
+	};
+
+	onMouseLeave = () => {
+		this.setState({ photoHover: false });
+	};
+
+	onClick = () => {
+		this.setState({ photoHover: false });
 	};
 
 	render() {
@@ -28,23 +44,35 @@ class RootContainer extends Component {
 			<React.Fragment>
 				<MenuComponent onToggle={this.onToggle} />
 				<StyledRoot expanded={expanded}>
-					<Route
-						path="/"
-						exact
-						component={props => <HomeContainer />}
+					<img
+						src={bg}
+						alt={pathToName(bg)}
+						className="bg"
+						onMouseEnter={this.onMouseEnter}
+						onMouseLeave={this.onMouseLeave}
+						onClick={this.onClick}
 					/>
-					<Route
-						path="/home"
-						component={props => <HomeContainer />}
-					/>
-					<Route
-						path="/resume"
-						component={props => <ResumeContainer />}
-					/>
-					<Route
-						path="/portfolio"
-						component={props => <PortfolioContainer />}
-					/>
+					<div className="overlay">
+						<div className="content">
+							<Route
+								path="/"
+								exact
+								component={props => <HomeContainer />}
+							/>
+							<Route
+								path="/home"
+								component={props => <HomeContainer />}
+							/>
+							<Route
+								path="/resume"
+								component={props => <ResumeContainer />}
+							/>
+							<Route
+								path="/portfolio"
+								component={props => <PortfolioContainer />}
+							/>
+						</div>
+					</div>
 				</StyledRoot>
 			</React.Fragment>
 		);
