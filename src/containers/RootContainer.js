@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, withRouter } from "react-router-dom";
+import { Route } from "react-router-dom";
 import HomeContainer from "./HomeContainer";
 import PortfolioContainer from "./PortfolioContainer";
 import ResumeContainer from "./ResumeContainer";
@@ -7,7 +7,26 @@ import styled from "styled-components";
 import MenuComponent from "../components/MenuComponent";
 import { pathToName } from "../utilities";
 import bg from "../images/house-web.jpg";
-import './styles/RootContainer.css'
+import "./styles/RootContainer.css";
+import sizeMe from "react-sizeme";
+
+const Overlay = styled.div`
+	position: fixed; /* Sit on top of the page content */
+	width: 90%; /* Full width (cover the whole page) */
+	height: 95%; /* Full height (cover the whole page) */
+	left: 64px;
+	background-color: rgba(0, 0, 0, 0.2); /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+	${props => (props.hover ? "display: none;" : "")};
+	min-width: 320px;
+
+	@media (max-width: 640px) {
+			width: 80%;
+			right: 64px;
+		}
+	}
+`;
 
 const StyledRoot = styled.div`
 	position: relative;
@@ -26,33 +45,27 @@ class RootContainer extends Component {
 		this.setState({ expanded });
 	};
 
-	onMouseEnter = () => {
-		this.setState({ photoHover: true });
-	};
-
-	onMouseLeave = () => {
-		this.setState({ photoHover: false });
-	};
-
 	onClick = () => {
-		this.setState({ photoHover: false });
+		this.setState({ photoHover: !this.state.photoHover });
 	};
 
 	render() {
 		const { expanded } = this.state;
+		let width;
 		return (
-			<React.Fragment>
+			<>
 				<MenuComponent onToggle={this.onToggle} />
 				<StyledRoot expanded={expanded}>
 					<img
 						src={bg}
 						alt={pathToName(bg)}
 						className="bg"
-						onMouseEnter={this.onMouseEnter}
-						onMouseLeave={this.onMouseLeave}
 						onClick={this.onClick}
 					/>
-					<div className="overlay">
+					<Overlay
+						containerWidth={width}
+						hover={this.state.photoHover}
+					>
 						<div className="content">
 							<Route
 								path="/"
@@ -72,11 +85,12 @@ class RootContainer extends Component {
 								component={props => <PortfolioContainer />}
 							/>
 						</div>
-					</div>
+					</Overlay>
+					)
 				</StyledRoot>
-			</React.Fragment>
+			</>
 		);
 	}
 }
 
-export default withRouter(RootContainer);
+export default sizeMe()(RootContainer);

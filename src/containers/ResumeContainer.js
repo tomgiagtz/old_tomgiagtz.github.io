@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
+import PDF from 'react-pdf-js'
+import resume from '../images/resume.pdf'
+import './styles/ResumeContainer.css'
 
-export default class ResumeContainer extends Component {
-  render() {
+const ResumeContainer = () => {
 	return (
-	  <div>
-		ResumeContainer
-	  </div>
+		<>
+			<PDF file={resume}/>
+			<a href={resume}> Download Here </a>
+		</>
 	)
-  }
 }
+
+export default ResumeContainer
+
