@@ -7,7 +7,7 @@ import RootContainer from "./containers/RootContainer"
 class App extends Component {
 	render() {
 		return (
-			<Router>
+			<Router basename={process.env.PUBLIC_URL}>
 				<RootContainer/>
 			</Router>
 		);
