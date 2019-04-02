@@ -8,7 +8,6 @@ import MenuComponent from "../components/MenuComponent";
 import { pathToName } from "../utilities";
 import bg from "../images/house-web.jpg";
 import "./styles/RootContainer.css";
-import sizeMe from "react-sizeme";
 
 const Overlay = styled.div`
 	position: fixed; /* Sit on top of the page content */
@@ -51,7 +50,6 @@ class RootContainer extends Component {
 
 	render() {
 		const { expanded } = this.state;
-		let width;
 		return (
 			<>
 				<MenuComponent onToggle={this.onToggle} />
@@ -63,7 +61,6 @@ class RootContainer extends Component {
 						onClick={this.onClick}
 					/>
 					<Overlay
-						containerWidth={width}
 						hover={this.state.photoHover}
 					>
 						<div className="content">
@@ -93,4 +90,4 @@ class RootContainer extends Component {
 	}
 }
 
-export default sizeMe()(RootContainer);
+export default RootContainer;
