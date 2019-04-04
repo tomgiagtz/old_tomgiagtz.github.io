@@ -14,7 +14,9 @@ export default class GalleryComponent extends Component {
 	render() {
 		
 		return (
-			<div className={'gallery-container'}>
+
+			<>
+				
 				<Gallery  photos={this.state.srcSet} onClick={this.openLightbox} direction={'column'}/>
 				<Lightbox
 					currentImage={this.state.currentImage}
@@ -26,7 +28,7 @@ export default class GalleryComponent extends Component {
 					onClickThumbnail={this.gotoImage}
 					onClose={this.closeLightbox}
 				/>
-			</div>
+			</>
 		);
 	}
 
@@ -68,9 +70,10 @@ export default class GalleryComponent extends Component {
 		const images = importAll(
 			require.context("../images/portfolio", false, /\.(png|jpe?g|svg)$/)
 		);
+		console.log(images)
 		let desc = descriptions;
 
 		this.setState({ srcSet: createSrcSet(images, desc) });
 	};
-	//combines images and descriptions to create object for Lightbox
+	
 }

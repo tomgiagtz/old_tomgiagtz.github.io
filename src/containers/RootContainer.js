@@ -14,14 +14,15 @@ const Overlay = styled.div`
 	width: 90%; /* Full width (cover the whole page) */
 	height: 95%; /* Full height (cover the whole page) */
 	left: 64px;
-	background-color: rgba(0, 0, 0, 0.2); /* Black background with opacity */
+	background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
 	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 	${props => (props.hover ? "display: none;" : "")};
 	min-width: 320px;
 
 	@media (max-width: 640px) {
-			width: 80%;
-			right: 64px;
+			width: 100%;
+			left: 32px;
+			
 		}
 	}
 `;
@@ -82,7 +83,6 @@ class RootContainer extends Component {
 							/>
 						</div>
 					</Overlay>
-					)
 				</StyledRoot>
 			</>
 		);

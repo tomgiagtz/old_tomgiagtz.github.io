@@ -1,0 +1,5 @@
+div[id$="container"] {
+	background-color: white;
+	border-radius: 8px 8px 0px 0px;
+	margin-bottom: 0;
+}

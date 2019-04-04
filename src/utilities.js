@@ -7,7 +7,7 @@ export function pathToName(p) {
 	let filename = files[files.length-1]
 	return filename
 }
-
+//combines images and descriptions to create object for Lightbox
 export function createSrcSet(imArr, descArr) {
 	return imArr.map((image, i) => {
 		let {name, description, width, height } = descArr[i]
@@ -20,6 +20,8 @@ export function createSrcSet(imArr, descArr) {
 		};
 	});
 };
+
+//imports all files from a directory
 export function importAll(r) {
 	return r.keys().map(r);
 };
