@@ -1,5 +1,23 @@
-a {
-	display: block;
-	color: white;
-	text-align: center;
+.icon {
+	color: whitesmoke;
+	padding: 0.2em;
+	display: inline-block;
+	vertical-align: top;
+	background: #4f4f4f;
+	border-radius: 8px 0px 0px 8px;
+}
+.icon:hover {
+	background: whitesmoke;
+	color: #4f4f4f;
+}
+
+canvas {
+	overflow-y: scroll;
+	min-width: 200px;
+}
+
+@media screen and (max-width:720) {
+	.icon {
+		border-radius: 8px;
+	}
 }

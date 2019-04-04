@@ -7,3 +7,19 @@ export function pathToName(p) {
 	let filename = files[files.length-1]
 	return filename
 }
+
+export function createSrcSet(imArr, descArr) {
+	return imArr.map((image, i) => {
+		let {name, description, width, height } = descArr[i]
+		return {
+			src: image,
+			caption: name + ' (' + description + ')',
+			alt: name,
+			width,
+			height
+		};
+	});
+};
+export function importAll(r) {
+	return r.keys().map(r);
+};

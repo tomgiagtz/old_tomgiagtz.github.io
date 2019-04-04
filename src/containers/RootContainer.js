@@ -16,7 +16,6 @@ const Overlay = styled.div`
 	left: 64px;
 	background-color: rgba(0, 0, 0, 0.2); /* Black background with opacity */
 	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-	cursor: pointer; /* Add a pointer on hover */
 	${props => (props.hover ? "display: none;" : "")};
 	min-width: 320px;
 
@@ -29,7 +28,7 @@ const Overlay = styled.div`
 
 const StyledRoot = styled.div`
 	position: relative;
-	overflow: hidden;
+	overflow: scroll;
 	transition: all 0.15s;
 	margin-left: ${props => (props.expanded ? 240 : 64)}px;
 `;
