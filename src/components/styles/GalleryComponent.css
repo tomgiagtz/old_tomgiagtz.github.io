@@ -2,7 +2,7 @@
 .react-photo-gallery--gallery {
     position: relative;
     overflow-y: scroll;
-    height: 33em;
+    height: 65vh;;
     margin-bottom: 5%;
 }
 .react-photo-gallery--gallery::-webkit-scrollbar { /* WebKit */

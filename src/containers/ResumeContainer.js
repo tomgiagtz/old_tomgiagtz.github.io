@@ -7,12 +7,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ResumeContainer = () => {
 	return (
-		<div>
-		<a href={resume}>
+		<div className="resume-container">
+
+			<div className="resume-child">	
+				<h1 className="header"> Resume </h1>
+			</div>
+
+			<div className="resume-child pdf-container">
+			<PDF file={resume} />
+			<a href={resume}>
 				<FontAwesomeIcon icon={faFileDownload} size="2x" className='download'/>
 			</a>
-			<PDF file={resume} />
-			
+			</div>
 		</div>
 	);
 };
