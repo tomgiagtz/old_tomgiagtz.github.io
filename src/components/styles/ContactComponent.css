@@ -1,0 +1,25 @@
+.icon-container{
+	flex-direction: row;
+	margin: 1em auto;
+	padding: 0.3em;
+	width: 18vw;
+	border-radius: 0.5em;
+}
+
+.icon-container:hover{
+	background-color: rgba(255, 255, 255, 0.2)
+}
+
+.icon {
+	color: white;
+	padding-left: 0.5em;
+} 
+
+
+.icon:hover {
+	color: #222;
+	
+}
+.icon-container .icon:first-child {
+	padding-left: 0;
+}

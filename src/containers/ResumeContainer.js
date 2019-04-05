@@ -9,7 +9,7 @@ const ResumeContainer = () => {
 	return (
 		<div>
 		<a href={resume}>
-				<FontAwesomeIcon icon={faFileDownload} size="2x" className={'icon'}/>
+				<FontAwesomeIcon icon={faFileDownload} size="2x" className='download'/>
 			</a>
 			<PDF file={resume} />
 			

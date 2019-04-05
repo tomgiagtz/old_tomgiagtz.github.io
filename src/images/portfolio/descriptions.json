@@ -2,62 +2,76 @@
 	{
 		"name": "Bridge",
 		"description": "Photography",
-		"width" : 4,
+		"width": 4,
 		"height": 2.5
 	},
 	{
 		"name": "Circle",
 		"description": "Photography",
-		"width" : 4.5,
+		"width": 4.5,
 		"height": 3
 	},
 	{
 		"name": "Clutter",
 		"description": "Charcoal on Paper",
-		"width" : 3,
+		"width": 3,
 		"height": 4
 	},
 	{
 		"name": "DC Color 1",
 		"description": "Acrylic on Paper",
-		"width" : 2,
+		"width": 2,
 		"height": 3
 	},
 	{
 		"name": "DC Color 2",
 		"description": "Acrylic on Paper",
-		"width" : 5,
+		"width": 5,
 		"height": 2
 	},
 	{
 		"name": "Drawn On Hand",
 		"description": "Digital Media/Photography",
-		"width" : 2,
+		"width": 2,
 		"height": 3
 	},
 	{
 		"name": "Footsteps",
 		"description": "Photography",
-		"width" : 3,
+		"width": 3,
 		"height": 2
 	},
 	{
 		"name": "Gambino",
 		"description": "Digital Media/Photography",
-		"width" : 4,
+		"width": 4,
 		"height": 2.2
 	},
-	
+
 	{
 		"name": "Leaf",
 		"description": "Digital Media",
-		"width" : 3,
+		"width": 3,
 		"height": 1.2
 	},
 	{
+		"name": "Plane Wing",
+		"description": "Digital Media/Photography",
+		"width": 2,
+		"height": 2.8
+	},
+
+	{
 		"name": "Study of Fabric",
 		"description": "Charcoal on Newsprint",
-		"width" : 2,
+		"width": 2,
+		"height": 3
+	},
+
+	{
+		"name": "Tower",
+		"description": "Photography",
+		"width": 2,
 		"height": 2.8
 	}
 ]

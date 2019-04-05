@@ -1,4 +1,4 @@
-.icon {
+.download {
 	color: whitesmoke;
 	padding: 0.2em;
 	display: inline-block;
@@ -6,7 +6,7 @@
 	background: #4f4f4f;
 	border-radius: 8px 0px 0px 8px;
 }
-.icon:hover {
+.download:hover {
 	background: whitesmoke;
 	color: #4f4f4f;
 }
