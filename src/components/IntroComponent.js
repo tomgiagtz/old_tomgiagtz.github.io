@@ -9,7 +9,7 @@ export default class IntroComponent extends Component {
 				<h1 className="header">Tom Giagtzoglou</h1>
 				<div className="details">
 					<p>Web and Graphic Designer</p>
-					<p> Creative Enginner </p>
+					<p> Creative Engineer </p>
 				</div>
 				<div className="profile">
 					<img src={profile} alt="Tom Giagtzoglou" />
