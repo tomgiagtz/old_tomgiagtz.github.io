@@ -1,0 +1,26 @@
+# Tom Giagtzoglou
+# Portfolio Annotations
+
+"Circle", Photography, 0.5Hrs, Hobby
+
+"Footsteps", Photography, 0.5 Hrs, Hobby
+
+"Bridge", Photography, 0.25Hrs, Hobby
+
+"Tower", Photography, Photoshop, 3Hrs, Created for AP 2D Art
+
+"DC Color 1", Acrylic on Paper, 6in x 9in, 3Hrs, Created in Color Theory
+
+"DC Color 2", Acrylic on Paper, 4in x 10in, 4Hrs, Created in Color Theory
+
+"Leaf", Digital Media, Adobe Illustrator, 8Hrs, Created for AP 2D Art
+
+"Gambino", Digital Media/Photography, Adobe Illustrator, 8Hrs, Created for AP 2D Art
+
+"Plane Wing", Digital Media/Photography, Procreate, 6Hrs, Created for AP 2D Art
+
+"Drawn On Hand", Digital Media/Photography, Procreate, 6Hrs, Created for AP 2D Art
+
+"Study of Fabric", Charcoal on Newsprint, 24in x 36in, 1Hr, Created for Drawing I
+
+"Clutter", Charcoal on Paper, 36in x 48in, 18Hrs, Final for Drawing I
