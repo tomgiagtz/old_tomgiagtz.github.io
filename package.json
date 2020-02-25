@@ -11,7 +11,7 @@
     "@zendeskgarden/react-tabs": "^3.3.10",
     "@zendeskgarden/react-theming": "^3.2.1",
     "i": "^0.3.6",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "pdfjs": "^2.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
