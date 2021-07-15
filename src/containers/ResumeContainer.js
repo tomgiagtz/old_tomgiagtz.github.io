@@ -1,6 +1,6 @@
 import React from "react";
 import PDF from "react-pdf-js";
-import resume from "../images/resume.pdf";
+import resume from "../images/GiagtzoglouResume.pdf";
 import "./styles/ResumeContainer.css";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
